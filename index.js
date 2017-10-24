@@ -35,7 +35,7 @@ app.post('/iletisim',function(req,res){
     });
 });
 
-/*app.get('/yorumlar',function(req,res){
+app.get('/yorumlar',function(req,res){
     fs.readFile('./orji/veri.json','utf8',function(err,data){
         data = JSON.parse(data);
         var veri = data["mesaj"];
@@ -47,7 +47,7 @@ app.post('/iletisim',function(req,res){
         res.sendFile(path.join(__dirname+'./views/yorumlar'));
         res.end(veri);
     });
-});*/
+});
 
 
 
