@@ -1,0 +1,42 @@
+html
+    head
+        title= title
+        link(rel="stylesheet" href="css/bootstrap.css")
+        link(rel="stylesheet" href="css/bootstrap-grid.min.css")
+        //link(rel="stylesheet" href="/css/style.css")
+    body
+        nav(class="nav navbar-default")
+            div(class="container")
+                ul(class="nav navbar-nav")
+                    li(class="active")
+                        a(href="/") Anasayfa
+                    li
+                        a(href="/iletisim") İletişim
+                    li
+                        a(href="/hakkimizda") Hakkımızda
+                    li
+                        a(href="/yorumlar") Yorumlar
+                    li
+                        a(href="/resimler") Resimler
+        form(class="form-inline",method="POST", action="/iletisim", style="padding:20px")
+            h2(class="form-signin-heading")
+                font(style="vertical-align: inherit") Bize Yazın
+                     
+                <br />
+                <br />
+            p İsim   
+                input(class="form-control",type="text",name="isim",placeholder="İsminizi Giriniz...")
+                <br />
+                <br />
+            p E-mail    
+                input(class="form-control",type="text",name="email",placeholder="E-mail Giriniz...")
+                <br />
+                <br />
+        div(class="form-group",style="padding:10px")
+            label(for="comment") Yorum    
+                textarea(class="form-control",name="mesaj", cols="50", rows="5" placeholder="Mesajınızı Giriniz...")
+                <br />
+                    input(class="btn btn-primary",type="submit")
+                
+        script(type='text/javascript', src='/js/jquery-3.2.1.min.js')
+        script(type='text/javascript', src='/js/bootstrap.min.js')
